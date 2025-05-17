@@ -1,45 +1,86 @@
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  border-radius: 5px;
 }
 
-/* Post navigation links */
+/* Post navigation container */
 .post_navi {
   display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
+/* Labels */
 .post_navi-label {
-  font-size: 0.8em;
-  opacity: 0.5;
+  font-size: 0.85em;
+  opacity: 0.6;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 5px;
+  display: block;
 }
 
+/* Navigation items */
 .post_navi .post_navi-item {
-  padding: 0 2.2em;
+  padding: 1em 2em;
   width: 50%;
   position: relative;
-  color: inherit !important;
+  color: #333 !important;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  user-select: none;
 }
 
+/* Previous navigation */
 .post_navi .nav_prev {
   text-align: left;
+  background: #ffe3d8;
+  border-right: 1px solid #f5bca9;
 }
 
+.post_navi .nav_prev:hover {
+  background: #ff7e5f;
+  color: white !important;
+}
+
+/* Next navigation */
 .post_navi .nav_next {
   text-align: right;
+  background: #d0f0fd;
 }
 
-.post_navi .nav_prev .post_navi-arrow {
-  left: 0;
+.post_navi .nav_next:hover {
+  background: #1ca7ec;
+  color: white !important;
 }
 
-.post_navi .nav_next .post_navi-arrow {
-  right: 0;
-}
-
+/* Arrows */
 .post_navi .post_navi-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2.5em;
-  opacity: 0.3;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  color: inherit;
+  user-select: none;
+}
+
+.post_navi .nav_prev .post_navi-arrow {
+  left: 12px;
+}
+
+.post_navi .nav_next .post_navi-arrow {
+  right: 12px;
+}
+
+.post_navi .post_navi-item:hover .post_navi-arrow {
+  opacity: 1;
 }
