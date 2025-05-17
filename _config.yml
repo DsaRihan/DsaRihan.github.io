@@ -1,19 +1,20 @@
-title: "My Blogs Name"
-author: "Default Author Name"
-description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+title: "Life, Code, Chaos & Curiosity"
+author: "Rihan Dsa"
+description: "A curious coder's journal of building, breaking, and learning — one commit at a time."
 
-# Email / Social media user names used by the minima theme:
-# All of these are optional and can be removed or commented out
-email: "example@mail.com"
-twitter_username: "twitteruser"
-github_username: "githubuser"
-linkedin_username: "linkedinuser"
-#facebook_username: username
-#flickr_username: username
-#instagram_username: username
-#pinterest_username: username
-#youtube_username: username
-#googleplus_username: +username
+# Contact & Social Media
+email: "dsarihan@gmail.com"
+# twitter_username: "rihancodes"            # Consider creating one!
+github_username: "DsaRihan"
+linkedin_username: "rihan-dsa"
+
+# Optional social links — uncomment if/when used
+#facebook_username: yourusername
+#flickr_username: yourusername
+#instagram_username: yourusername
+#pinterest_username: yourusername
+#youtube_username: yourusername
+#googleplus_username: +yourusername
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
@@ -25,7 +26,7 @@ rss: rss
 kramdown:
   syntax_highlighter_opts:
     disable: true
-    
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -39,4 +40,4 @@ defaults:
       path: ""
       type: post
     values:
-      tags: Other
+      tags: Tech • Thoughts • Projects • Learning
